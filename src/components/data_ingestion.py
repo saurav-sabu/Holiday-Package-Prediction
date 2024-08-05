@@ -27,7 +27,7 @@ class DataIngestion:
         logging.info("Data Ingestion Method Started") # Log the start of the data ingestion process
 
         try:
-            df = pd.read_csv(os.path.join("notebooks/data","Travel.csv"))
+            df = pd.read_csv(os.path.join("notebooks/data","cleaned_travel_data.csv"))
             logging.info("Data Loaded")  # Log that data has been successfully loaded
 
             # Create the directory for raw data if it doesn't exist
